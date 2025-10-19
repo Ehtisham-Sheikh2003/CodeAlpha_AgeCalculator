@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Age-Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="#">
+            <div id="title">
+                <h1>Age Calculator</h1>
+                <h3>🎉 "Your Birthday Has Secrets… Let's Unlock Them!" 🎉</h3>
+                <h4 id="1">Ever thought about how old you are in months, weeks, even days? 🤔</h4>
+                <h4 id="2">Enter your Birth Date and watch your real age appear like magic ✨</h4>
+            </div>
+            <div id="userinput">
+                <input type="date" id="birthDate" class="btnn"/><br>
+                <button type="button" class="btnn" onclick="calculateAge()">Calculate</button>
+            </div>
+        </form>
+
+      <div id="result" class="hidden">
+    <h2>Your Age is:</h2>
+    <h3 id="years">0 Years</h3>
+    <h3 id="months">0 Months</h3>
+    <h3 id="days">0 Days</h3>
+    
+</div>
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

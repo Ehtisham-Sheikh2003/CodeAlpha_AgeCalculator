@@ -12,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: radial-gradient(circle at top left, #1a0033, #000000, #0a0022);
-    overflow: hidden;
+    overflow-y: auto;
     color: #fff;
 }
 
@@ -22,7 +22,6 @@ body {
     50% { box-shadow: 0 0 30px #00ff99, 0 0 50px #ff00ff, 0 0 80px #00ccff; }
     100% { box-shadow: 0 0 20px #ff0099, 0 0 40px #00ffff, 0 0 60px #ff00cc; }
 }
-
 
 form {
     background: rgba(255, 255, 255, 0.05);
@@ -37,11 +36,11 @@ form {
     position: relative;
 }
 
-
 #title h1 {
     font-size: 32px;
     font-weight: 800;
     background: linear-gradient(90deg, #ff00ff, #00ffff, #ffcc00, #00ff66);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
@@ -59,6 +58,7 @@ form {
     margin-bottom: 10px;
     text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
 }
+
 
 #userinput {
     margin-top: 25px;
@@ -140,6 +140,7 @@ input[type="date"]:focus {
 #result h2 {
     font-size: 24px;
     background: linear-gradient(90deg, #00ffff, #ff00ff, #00ff99);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 15px #ff00ff;
@@ -161,4 +162,3 @@ input[type="date"]:focus {
         font-size: 26px;
     }
 }
-

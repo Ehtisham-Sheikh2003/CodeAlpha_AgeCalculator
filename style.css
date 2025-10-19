@@ -34,6 +34,8 @@ form {
     width: 90%;
     max-width: 420px;
     position: relative;
+    /* allow children (like #result) to overflow the form if necessary */
+    overflow: visible;
 }
 
 #title h1 {
@@ -125,7 +127,21 @@ input[type="date"]:focus {
     opacity: 0;
     transition: all 0.8s ease;
     animation: resultGlow 2s infinite alternate;
+
+    /* ENSURE FULL VISIBILITY OF LONG ANSWERS */
+    position: relative;   /* creates stacking context for z-index */
+    z-index: 50;          /* bring on top of surrounding elements */
+    overflow: visible;    /* allow content to extend beyond box if needed */
+    max-height: none;     /* don't limit vertical height */
+    word-break: break-word; /* wrap long words so they don't overflow horizontally */
+    white-space: normal;
 }
+
+/* If you prefer the result to stay within the viewport and become scrollable
+   instead of growing infinitely, replace the overflow/max-height above with:
+   max-height: 60vh;
+   overflow: auto;
+*/
 
 @keyframes resultGlow {
     0% { box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff; }

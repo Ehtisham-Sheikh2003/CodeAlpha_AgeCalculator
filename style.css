@@ -16,14 +16,14 @@ body {
     color: #fff;
 }
 
-/* 🔮 Animated Gradient Border Glow */
+
 @keyframes neonFlow {
     0% { box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff, 0 0 60px #ff0077; }
     50% { box-shadow: 0 0 30px #00ff99, 0 0 50px #ff00ff, 0 0 80px #00ccff; }
     100% { box-shadow: 0 0 20px #ff0099, 0 0 40px #00ffff, 0 0 60px #ff00cc; }
 }
 
-/* 🌈 Form Container */
+
 form {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
@@ -37,7 +37,7 @@ form {
     position: relative;
 }
 
-/* 🎆 Title Styling */
+
 #title h1 {
     font-size: 32px;
     font-weight: 800;
@@ -60,7 +60,6 @@ form {
     text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
 }
 
-/* 🌀 Input + Buttons */
 #userinput {
     margin-top: 25px;
 }
@@ -84,7 +83,7 @@ input[type="date"]:focus {
     border-color: #ff00ff;
 }
 
-/* 💥 Buttons */
+
 .btnn {
     padding: 12px 25px;
     margin: 10px;
@@ -111,7 +110,7 @@ input[type="date"]:focus {
     box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 80px #ffcc00;
 }
 
-/* 🪩 Funky Result Card */
+
 #result {
     background: rgba(0, 0, 30, 0.7);
     border: 2px solid #ff00ff;
@@ -153,7 +152,7 @@ input[type="date"]:focus {
     text-shadow: 0 0 15px #00ffff, 0 0 25px #ff00ff;
 }
 
-/* 🌐 Responsive */
+
 @media (max-width: 500px) {
     form {
         padding: 25px 20px;
@@ -162,3 +161,4 @@ input[type="date"]:focus {
         font-size: 26px;
     }
 }
+
